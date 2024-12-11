@@ -163,7 +163,7 @@
             alt="love you"
           />
           <div class="mt-12">
-            <h1 class="text-2xl text-center text-pink-600">I'm blushing right now, Thank you)))</h1>
+            <h1 class="text-2xl text-center text-pink-600">I'm blushing right now, Thank you {{ nuxtApp.$config.public.NAME }})))</h1>
           </div>
         </div>
       </transition>
