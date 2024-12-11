@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Custom styles here */
+html,
+body {
+	scrollbar-gutter: stable;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+		@apply text-black bg-pink-300 min-h-dvh w-full flex items-center justify-center;
+	}
+}
+
+@layer components {
+  .container {
+    @apply max-w-[300px] mx-auto px-4;
+  }
+}
+
+/* animations */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-to,
+.fade-leave-from {
+	opacity: 1;
+  transform: translateY(0px);
+}
